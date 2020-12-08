@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Race</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/animate.css@3.5.2/animate.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="container-fluid" id="app">
+        <img src="./images/start.png" id="start" :style="{opacity: racing ? 0 : 1}" @click="startRace">
+        <img src="./images/stop.png" id="stop" class="animated" :class="{bounce: winner, infinite: winner}">
+        <img src="images/baby1.png" id="baby1" class="racer" :class="baby1Class" :style="baby1Style">
+        <img src="images/baby2.png" id="baby2" class="racer" :class="baby2Class" :style="baby2Style">
+        <div class="container-fluid text-center">
+            <p v-show="isNinja" class="isNinja" :class="isNinjaClass">Winner</p>
+        </div>
+    </div>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@2.5.2/dist/vue.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

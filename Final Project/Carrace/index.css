@@ -1,0 +1,42 @@
+
+#start {
+    width: 10vw;
+    transition: opacity .5s;
+}
+
+#stop {
+    width: 15vw;
+    position: absolute;
+    right: 0;
+    bottom: 18vh;
+}
+
+#baby1 {
+    width: 10vw;
+    bottom: 35vh;
+}
+
+#baby2 {
+    width: 10vw;
+}
+
+.racer {
+    position: absolute;
+    left: 0;
+    bottom: 10vh;
+    transition: left .5s;
+}
+
+.winner {
+    bottom: 20vh;
+    left: 40vw !important;
+    width: 30vw !important;
+    transition: bottom .5s, left .5s, width .5s;
+}
+
+.isNinja {
+    top: 40vh;
+    position: relative;
+    font-size: 100px;
+    color: red;
+}
